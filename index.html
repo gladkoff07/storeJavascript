@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8" />
+    <title>Главная страница</title>
+    <!--[if IE]>
+      <meta
+        http-equiv="X-UA-Compatible"
+        content="IE = edge"
+    /><![endif]-->
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1, maximum-scale=1"
+    />
+    <meta
+      name="format-detection"
+      content="telephone=no"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&amp;display=swap&_v=20250609181604"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="css/vendor.min.css?_v=20250609181604"
+    />
+    <link
+      rel="stylesheet"
+      href="css/main.min.css?_v=20250609181604"
+    />
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js?_v=20250609181604"></script
+    ><![endif]-->
+  </head>
+  <body>
+    <!-- panel-->
+    <div class="panel js-panel">
+      <div class="overlay panel__overlay js-overlay js-close-cart"></div>
+      <div class="cart panel__cart js-cart">
+        <div class="cart__close js-close-cart"></div>
+        <div class="cart__box">
+          <div class="cart__item cart__item--empty js-cart-item-empty">
+            <div class="cart__item-header">Ваша корзина пуста</div>
+            <div class="cart__item-icon">
+              <svg class="icon icon-cart-modal">
+                <use xlink:href="svg/symbols.svg#icon-cart-modal"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="cart__item cart__item--order js-cart-item-order">
+            <div class="cart__item-header">Ваш заказ</div>
+            <form
+              class="cart-form"
+              action="#"
+              method="post"
+            >
+              <ul class="cart-list js-cart-list"></ul>
+            </form>
+            <!-- total-->
+            <div class="cart-total">
+              <div class="cart-total__text">Итого</div>
+              <div class="cart-total__value js-cart-total-value">
+                <span>₽</span>
+              </div>
+            </div>
+            <!-- button-->
+            <button
+              class="cart-form__submit"
+              type="submit"
+            >
+              Оформить заказ
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header-->
+    <header class="header section">
+      <div class="container row row--align-center">
+        <!-- logo-->
+        <div class="logo header__logo">
+          <img
+            src="img/img-logo.webp"
+            alt=""
+          />
+        </div>
+        <!-- search-->
+        <form
+          class="form header__search"
+          action="#"
+        >
+          <input
+            class="form__input"
+            type="search"
+            name="search"
+            placeholder="Поиск..."
+          />
+          <button
+            class="form__submit"
+            type="submit"
+          >
+            <svg class="icon icon-search">
+              <use xlink:href="svg/symbols.svg#icon-search"></use>
+            </svg>
+          </button>
+        </form>
+        <!-- basket toggle-->
+        <div class="basket-toggle header__basket-toggle js-btn-toggle-basket">
+          <svg class="icon icon-cart-toggle">
+            <use xlink:href="svg/symbols.svg#icon-cart-toggle"></use>
+          </svg>
+        </div>
+      </div>
+    </header>
+    <main class="main section">
+      <div class="container">
+        <!-- list products-->
+        <div class="list-products main__list-products js-list-products"></div>
+        <!-- pagination-->
+        <div
+          class="pagination pagination--hidden main__pagination js-pagination"
+        >
+          <button
+            class="btn-pagination btn-pagination-prev js-btn-pagination-prev"
+            type="button"
+          >
+            <svg class="icon icon-arrow-prev">
+              <use xlink:href="svg/symbols.svg#icon-arrow-prev"></use>
+            </svg>
+          </button>
+          <ul class="list-pagination js-pagination-list"></ul>
+          <button
+            class="btn-pagination btn-pagination-next js-btn-pagination-next"
+            type="button"
+          >
+            <svg class="icon icon-arrow-next">
+              <use xlink:href="svg/symbols.svg#icon-arrow-next"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </main>
+    <!-- footer-->
+    <footer class="footer section">
+      <div class="container">
+        <div class="copyright">© Quadro, 2025</div>
+      </div>
+    </footer>
+    <!-- scripts-->
+    <script
+      src="js/vendor.js?_v=20250609181604"
+      defer
+    ></script>
+    <script
+      type="module"
+      src="js/main.js?_v=20250609181604"
+      defer
+    ></script>
+  </body>
+</html>
