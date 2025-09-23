@@ -2,6 +2,7 @@
 
 import { closeCart, openCart } from "./modules/basketPopup.js"
 import { cartData } from "./modules/cartData.js"
+import { filter } from "./modules/filter.js"
 import { renderProducts } from "./modules/renderInitialProducts.js"
 import { showMoreProducts } from "./modules/showMoreProducts.js"
 // import { paginate } from "./modules/pagination.js"
@@ -18,4 +19,5 @@ document.addEventListener("DOMContentLoaded", function () {
   cartData()
   renderProducts(products, productsContainer, firstProductsIndex, lastProductsIndex)
   showMoreProducts(products, productsContainer, firstProductsIndex, lastProductsIndex)
+  filter(products, productsContainer)
 })

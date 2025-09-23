@@ -1,7 +1,6 @@
 const renderProducts = (products, productsContainer, firstProductsIndex, lastProductsIndex) => {
 
   const renderInitialProducts = products.slice(firstProductsIndex, lastProductsIndex)
-  console.log(renderInitialProducts)
 
   renderInitialProducts.forEach(({ id, photo, model, prices }) => {
     const itemProduct = document.createElement('div')
