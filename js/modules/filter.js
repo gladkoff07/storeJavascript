@@ -4,9 +4,11 @@ const filter = (products, productsContainer) => {
 
   const seriesFilterEl = document.querySelector('.js-filter-series')
   const seriesFilterItemsEl = document.querySelectorAll('.js-series-item')
-  let currentSeriesFilter = null
   const btnShowMore = document.querySelector('.js-btn-show-more')
   const inputSearch = document.querySelector('.js-input-search')
+  const priceFilterSelect = document.querySelector('.js-sorting-price')
+  let currentSeriesFilter = null
+  let currentPriceFilterSelect = 'default'
 
   const filterSeriesProducts = (series, inputValue) => {
     const filteredProducts = products.filter((product) => {
@@ -18,6 +20,21 @@ const filter = (products, productsContainer) => {
       }
       return true
     })
+
+    if (currentPriceFilterSelect === 'asc') {
+      filteredProducts.sort((a, b) => {
+        const priceA = parseInt(a.prices[0].replace(/\s/g, ''), 10)
+        const priceB = parseInt(b.prices[0].replace(/\s/g, ''), 10)
+        return priceA - priceB
+      })
+    } else if (currentPriceFilterSelect === 'desc') {
+      filteredProducts.sort((a, b) => {
+        const priceA = parseInt(a.prices[0].replace(/\s/g, ''), 10)
+        const priceB = parseInt(b.prices[0].replace(/\s/g, ''), 10)
+        return priceB - priceA
+      })
+    }
+
     return filteredProducts
   }
 
@@ -53,9 +70,16 @@ const filter = (products, productsContainer) => {
     })
   }
 
-  handleSearchInput()
+  const handlePriceFilterChange = () => {
+    priceFilterSelect.addEventListener('change', () => {
+      currentPriceFilterSelect = priceFilterSelect.value
+      applyFilter()
+    })
+  }
 
+  handleSearchInput()
   handleSeriesFilterClick()
+  handlePriceFilterChange()
 }
 
 export { filter }
