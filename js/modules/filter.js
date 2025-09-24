@@ -6,15 +6,29 @@ const filter = (products, productsContainer) => {
   const seriesFilterItemsEl = document.querySelectorAll('.js-series-item')
   let currentSeriesFilter = null
   const btnShowMore = document.querySelector('.js-btn-show-more')
+  const inputSearch = document.querySelector('.js-input-search')
 
-  const filterSeriesProducts = (series) => {
+  const filterSeriesProducts = (series, inputValue) => {
     const filteredProducts = products.filter((product) => {
       if (series && product.series !== series) {
+        return false
+      }
+      if (inputValue && !product.model.toLowerCase().includes(inputValue.toLowerCase())) {
         return false
       }
       return true
     })
     return filteredProducts
+  }
+
+  const applyFilter = () => {
+    const filteredProducts = filterSeriesProducts(currentSeriesFilter, inputSearch.value)
+    renderProductCards(filteredProducts, productsContainer)
+    btnShowMore.classList.add('hidden')
+  }
+
+  const handleSearchInput = () => {
+    inputSearch.addEventListener('input', applyFilter)
   }
 
   const handleSeriesFilterClick = () => {
@@ -35,11 +49,11 @@ const filter = (products, productsContainer) => {
         currentSeriesFilter = null
       }
 
-      const filteredProducts = filterSeriesProducts(currentSeriesFilter)
-      renderProductCards(filteredProducts, productsContainer)
-      btnShowMore.classList.add('hidden')
+      applyFilter()
     })
   }
+
+  handleSearchInput()
 
   handleSeriesFilterClick()
 }

@@ -69,7 +69,7 @@ const products = [
     category: "quadcopter",
     series: "Mavic",
     model: "DJI Mavic 3",
-    prices: ["362 000", "400 000"],
+    prices: ["352 000", "400 000"],
     photo: [
       "img/quadcopter0001-front-view.webp",
       "img/quadcopter0001-above-view.webp",
@@ -85,7 +85,7 @@ const products = [
     category: "quadcopter",
     series: "Air",
     model: "DJI AIR 2S",
-    prices: ["129 000", "150 000"],
+    prices: ["139 000", "150 000"],
     photo: [
       "img/quadcopter0002-front-view.webp",
       "img/quadcopter0002-above-view.webp",
@@ -101,7 +101,7 @@ const products = [
     category: "quadcopter",
     series: "Mini",
     model: "DJI Mini 2",
-    prices: ["49 000", "70 000"],
+    prices: ["59 000", "70 000"],
     photo: [
       "img/quadcopter0003-front-view.webp",
       "img/quadcopter0003-above-view.webp",
@@ -117,7 +117,7 @@ const products = [
     category: "quadcopter",
     series: "Inspire",
     model: "DJI Inspire 2",
-    prices: ["1 239 000", "1 400 000"],
+    prices: ["1 249 000", "1 400 000"],
     photo: [
       "img/quadcopter0004-front-view.webp",
       "img/quadcopter0004-above-view.webp",
@@ -133,7 +133,7 @@ const products = [
     category: "quadcopter",
     series: "Mavic",
     model: "DJI Mavic 3",
-    prices: ["362 000", "400 000"],
+    prices: ["372 000", "400 000"],
     photo: [
       "img/quadcopter0001-front-view.webp",
       "img/quadcopter0001-above-view.webp",
@@ -149,7 +149,7 @@ const products = [
     category: "quadcopter",
     series: "Air",
     model: "DJI AIR 2S",
-    prices: ["129 000", "150 000"],
+    prices: ["149 000", "150 000"],
     photo: [
       "img/quadcopter0002-front-view.webp",
       "img/quadcopter0002-above-view.webp",
@@ -165,7 +165,7 @@ const products = [
     category: "quadcopter",
     series: "Mini",
     model: "DJI Mini 2",
-    prices: ["49 000", "70 000"],
+    prices: ["69 000", "70 000"],
     photo: [
       "img/quadcopter0003-front-view.webp",
       "img/quadcopter0003-above-view.webp",
@@ -181,7 +181,7 @@ const products = [
     category: "quadcopter",
     series: "Inspire",
     model: "DJI Inspire 2",
-    prices: ["1 239 000", "1 400 000"],
+    prices: ["1 259 000", "1 400 000"],
     photo: [
       "img/quadcopter0004-front-view.webp",
       "img/quadcopter0004-above-view.webp",
@@ -197,7 +197,7 @@ const products = [
     category: "quadcopter",
     series: "Mavic",
     model: "DJI Mavic 3",
-    prices: ["362 000", "400 000"],
+    prices: ["392 000", "400 000"],
     photo: [
       "img/quadcopter0001-front-view.webp",
       "img/quadcopter0001-above-view.webp",
@@ -213,7 +213,7 @@ const products = [
     category: "quadcopter",
     series: "Air",
     model: "DJI AIR 2S",
-    prices: ["129 000", "150 000"],
+    prices: ["159 000", "150 000"],
     photo: [
       "img/quadcopter0002-front-view.webp",
       "img/quadcopter0002-above-view.webp",
@@ -229,7 +229,7 @@ const products = [
     category: "quadcopter",
     series: "Mini",
     model: "DJI Mini 2",
-    prices: ["49 000", "70 000"],
+    prices: ["79 000", "70 000"],
     photo: [
       "img/quadcopter0003-front-view.webp",
       "img/quadcopter0003-above-view.webp",
@@ -245,7 +245,7 @@ const products = [
     category: "quadcopter",
     series: "Inspire",
     model: "DJI Inspire 2",
-    prices: ["1 239 000", "1 400 000"],
+    prices: ["1 269 000", "1 400 000"],
     photo: [
       "img/quadcopter0004-front-view.webp",
       "img/quadcopter0004-above-view.webp",
@@ -261,7 +261,7 @@ const products = [
     category: "quadcopter",
     series: "Mavic",
     model: "DJI Mavic 3",
-    prices: ["362 000", "400 000"],
+    prices: ["393 000", "400 000"],
     photo: [
       "img/quadcopter0001-front-view.webp",
       "img/quadcopter0001-above-view.webp",
@@ -277,7 +277,7 @@ const products = [
     category: "quadcopter",
     series: "Air",
     model: "DJI AIR 2S",
-    prices: ["129 000", "150 000"],
+    prices: ["179 000", "150 000"],
     photo: [
       "img/quadcopter0002-front-view.webp",
       "img/quadcopter0002-above-view.webp",
@@ -293,7 +293,7 @@ const products = [
     category: "quadcopter",
     series: "Mini",
     model: "DJI Mini 2",
-    prices: ["49 000", "70 000"],
+    prices: ["89 000", "70 000"],
     photo: [
       "img/quadcopter0003-front-view.webp",
       "img/quadcopter0003-above-view.webp",
@@ -309,7 +309,7 @@ const products = [
     category: "quadcopter",
     series: "Inspire",
     model: "DJI Inspire 2",
-    prices: ["1 239 000", "1 400 000"],
+    prices: ["1 289 000", "1 400 000"],
     photo: [
       "img/quadcopter0004-front-view.webp",
       "img/quadcopter0004-above-view.webp",
@@ -325,7 +325,7 @@ const products = [
     category: "quadcopter",
     series: "Mavic",
     model: "DJI Mavic 3",
-    prices: ["362 000", "400 000"],
+    prices: ["395 000", "400 000"],
     photo: [
       "img/quadcopter0001-front-view.webp",
       "img/quadcopter0001-above-view.webp",
@@ -341,7 +341,7 @@ const products = [
     category: "quadcopter",
     series: "Air",
     model: "DJI AIR 2S",
-    prices: ["129 000", "150 000"],
+    prices: ["183 000", "150 000"],
     photo: [
       "img/quadcopter0002-front-view.webp",
       "img/quadcopter0002-above-view.webp",
@@ -357,7 +357,7 @@ const products = [
     category: "quadcopter",
     series: "Mini",
     model: "DJI Mini 2",
-    prices: ["49 000", "70 000"],
+    prices: ["99 000", "70 000"],
     photo: [
       "img/quadcopter0003-front-view.webp",
       "img/quadcopter0003-above-view.webp",
@@ -373,7 +373,7 @@ const products = [
     category: "quadcopter",
     series: "Inspire",
     model: "DJI Inspire 2",
-    prices: ["1 239 000", "1 400 000"],
+    prices: ["1 288 000", "1 400 000"],
     photo: [
       "img/quadcopter0004-front-view.webp",
       "img/quadcopter0004-above-view.webp",
@@ -390,7 +390,7 @@ const products = [
     category: "quadcopter",
     series: "Mavic",
     model: "DJI Mavic 3",
-    prices: ["362 000", "400 000"],
+    prices: ["388 000", "400 000"],
     photo: [
       "img/quadcopter0001-front-view.webp",
       "img/quadcopter0001-above-view.webp",
