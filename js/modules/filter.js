@@ -7,15 +7,21 @@ const filter = (products, productsContainer) => {
   const btnShowMore = document.querySelector('.js-btn-show-more')
   const inputSearch = document.querySelector('.js-input-search')
   const priceFilterSelect = document.querySelector('.js-sorting-price')
+  const priceFilterInputs = document.querySelectorAll('.js-filter-price-input')
   let currentSeriesFilter = null
   let currentPriceFilterSelect = 'default'
+  let currentPriceFilterInputs = { min: 0, max: Infinity }
 
-  const filterSeriesProducts = (series, inputValue) => {
+  const filterSeriesProducts = (series, inputValue, inputPrice) => {
     const filteredProducts = products.filter((product) => {
       if (series && product.series !== series) {
         return false
       }
       if (inputValue && !product.model.toLowerCase().includes(inputValue.toLowerCase())) {
+        return false
+      }
+      const price = parseInt(product.prices[0].replace(/\s/g, ''), 10)
+      if (price < inputPrice.min || price > inputPrice.max) {
         return false
       }
       return true
@@ -39,7 +45,7 @@ const filter = (products, productsContainer) => {
   }
 
   const applyFilter = () => {
-    const filteredProducts = filterSeriesProducts(currentSeriesFilter, inputSearch.value)
+    const filteredProducts = filterSeriesProducts(currentSeriesFilter, inputSearch.value, currentPriceFilterInputs)
     renderProductCards(filteredProducts, productsContainer)
     btnShowMore.classList.add('hidden')
   }
@@ -76,6 +82,18 @@ const filter = (products, productsContainer) => {
       applyFilter()
     })
   }
+
+  const handlePriceFilterInputChange = () => {
+
+    const minPrice = parseInt(priceFilterInputs[0].value, 10) || 0
+    const maxPrice = parseInt(priceFilterInputs[1].value, 10) || Infinity
+    currentPriceFilterInputs = { min: minPrice, max: maxPrice }
+    applyFilter()
+  }
+
+  priceFilterInputs.forEach(input => {
+    input.addEventListener('input', handlePriceFilterInputChange)
+  })
 
   handleSearchInput()
   handleSeriesFilterClick()

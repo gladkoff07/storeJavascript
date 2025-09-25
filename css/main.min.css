@@ -619,6 +619,51 @@ section {
   cursor: pointer;
 }
 
+.filter-prices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0 20px;
+}
+.filter-prices__item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  height: 40px;
+  padding: 0 10px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.filter-prices__item-text {
+  font-size: 14px;
+}
+.filter-prices__input {
+  width: 85px;
+  padding: 0 5px;
+  border: 0;
+  font-size: 14px;
+  text-align: center;
+  appearance: none;
+}
+.filter-prices__input::-webkit-input-placeholder {
+  color: #333;
+  font-size: 14px;
+}
+.filter-prices__input:-moz-placeholder {
+  color: #333;
+  font-size: 14px;
+}
+.filter-prices__input::-moz-placeholder {
+  color: #333;
+  font-size: 14px;
+}
+.filter-prices__input:-ms-input-placeholder {
+  color: #333;
+  font-size: 14px;
+}
+
 .main {
   padding: 30px 0;
 }
